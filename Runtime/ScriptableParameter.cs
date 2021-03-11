@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace SAS.ScriptableTypes
 {
-    [CreateAssetMenu(menuName = "SAS/State Machine Controller/ScriptableParameter")]
+    [CreateAssetMenu(menuName = "SAS/ScriptableTypes/FSMParameter")]
     public class ScriptableParameter : ScriptableObject, ISerializationCallbackReceiver
     {
         [SerializeField] private Parameter m_InitialValue = default;
