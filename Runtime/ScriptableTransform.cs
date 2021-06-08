@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SAS.ScriptableTypes
 {
-    [CreateAssetMenu(menuName = "Scriptables/Variables/Transform")]
+    [CreateAssetMenu(menuName = "SAS/ScriptableTypes/Transform")]
     public class ScriptableTransform : ScriptableObject, IProperty
     {
         [HideInInspector] public Transform value { get; set; }
