@@ -3,7 +3,7 @@ using System;
 
 namespace SAS.ScriptableTypes
 {
-    [CreateAssetMenu(menuName = "SAS/ScriptableTypes/Float")]
+    [CreateAssetMenu(menuName = "SAS/ScriptableTypes/Integer")]
     public class ScriptableInt : ScriptableObject, ISerializationCallbackReceiver
     {
         [SerializeField] private int m_InitialValue = default;
