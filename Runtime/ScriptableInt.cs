@@ -7,7 +7,7 @@ namespace SAS.ScriptableTypes
     public class ScriptableInt : ScriptableObject, ISerializationCallbackReceiver
     {
         [SerializeField] private int m_InitialValue = default;
-        [NonSerialized] public int runtimeValue;
+        [NonSerialized] public int value;
 
         void ISerializationCallbackReceiver.OnBeforeSerialize()
         {
@@ -16,7 +16,7 @@ namespace SAS.ScriptableTypes
 
         void ISerializationCallbackReceiver.OnAfterDeserialize()
         {
-            runtimeValue = m_InitialValue;
+            value = m_InitialValue;
         }
     }
 }
